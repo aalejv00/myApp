@@ -1,0 +1,10 @@
+<h1 class="Primero">Mi primer componente</h1>
+<!--Esto es una interpolación-->
+<p>Nombre: {{Nombre}}</p>
+<p>Nombre: {{Apellido}}</p>
+<p>Nombre: {{DNI}}</p>
+<p>Nombre: {{Empresa.value}}</p>
+Introduce la empresa: <input type="text" #Empresa>
+
+<!--Creamos un botón para observar el evento click-->
+<input type="button" value="Confirmar" (click)="llamaEmpresa(Empresa.value)">
